@@ -1,4 +1,4 @@
-searchfile = open("test.txt", "r")
-for line in searchfile:
-  if "test" in line: print(line)
-searchfile.close()
+from textblob import TextBlob
+with open('test.txt', 'r') as myfile:
+  data = myfile.read()
+print(data)
